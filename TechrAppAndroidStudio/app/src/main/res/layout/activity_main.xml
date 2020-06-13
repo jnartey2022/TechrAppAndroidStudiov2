@@ -4,15 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6699ff"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/mainpagedescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="68dp"
+        android:text="Welcome to Techr! To find what you're looking for, press one of the 9 buttons."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/motherboardbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="236dp"
+        android:text="Motherboards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainpagedescription" />
+
+    <Button
+        android:id="@+id/cpubutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="236dp"
+        android:text="CPU"
+        app:layout_constraintStart_toEndOf="@+id/motherboardbutton"
+        app:layout_constraintTop_toBottomOf="@+id/mainpagedescription" />
+
+    <Button
+        android:id="@+id/gpubutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:text="gpu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/cpubutton"
+        app:layout_constraintTop_toBottomOf="@+id/mainpagedescription" />
+
+    <Button
+        android:id="@+id/psubutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="PSU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardbutton"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/ssdhddbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSD/HDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toEndOf="@+id/psubutton"
+        app:layout_constraintTop_toBottomOf="@+id/cpubutton"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/keyboardbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="keyboards"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toEndOf="@+id/ssdhddbutton"
+        app:layout_constraintTop_toBottomOf="@+id/gpubutton"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/micebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:text="mice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/psubutton" />
+
+    <Button
+        android:id="@+id/headsetsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:text="headsets"
+        app:layout_constraintStart_toEndOf="@+id/micebutton"
+        app:layout_constraintTop_toBottomOf="@+id/ssdhddbutton" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/headsetsbutton"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardbutton"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
