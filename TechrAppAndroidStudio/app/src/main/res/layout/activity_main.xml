@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
-        android:text="Welcome to Techr! This app is suppose to help you find what you need. To find what you're looking for, press one of the many buttons available."
+        android:text="Welcome to Techr! This app is suppose to help you find what you need. To find what you're looking for, press one of the many buttons available. lets hope you find what you need"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
