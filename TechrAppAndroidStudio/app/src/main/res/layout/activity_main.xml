@@ -84,7 +84,8 @@
         app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toEndOf="@+id/ssdhddbutton"
         app:layout_constraintTop_toBottomOf="@+id/gpubutton"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.1"
+        android:onClick="openkeyboardpage"/>
 
     <Button
         android:id="@+id/micebutton"
@@ -107,11 +108,11 @@
         app:layout_constraintTop_toBottomOf="@+id/ssdhddbutton" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/acessoriesbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Button"
+        android:text="acessories"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.283"
