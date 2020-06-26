@@ -36,17 +36,24 @@ public class MainActivity extends AppCompatActivity {
         ssdhddbutton = findViewById(R.id.ssdhddbutton);
         acessoriesbutton = findViewById(R.id.acessoriesbutton);
 
-        keyboardbutton.setOnClickListener(goTokeyboardpage());
-        micebutton.setOnClickListener(goTomicepage());
-
+        keyboardbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goTokeyboardpage();
+            }
+        });
+        micebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goTomicepage();
+            }
+        });
     }
-
     public void goTokeyboardpage() {
 
         Intent Tokeyboardpage = new Intent(this, keyboardpage.class);
         startActivity(Tokeyboardpage);
     }
-
     public void goTomicepage() {
         Intent Tomicepage = new Intent(this, micepage.class);
         startActivity(Tomicepage);
